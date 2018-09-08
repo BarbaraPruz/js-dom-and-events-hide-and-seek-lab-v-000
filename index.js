@@ -27,21 +27,21 @@ function deepestChild() {
 
   return node
 }
-// function increaseRankBy(n) {
-//   // all li's in rankedList classes
-//   let rankedList = document.querySelectorAll('.ranked-list li');
-//   for (let i=0; i<rankedList.length; ++i) {
-//     rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML,10) + n;
-//   }
-// }
 function increaseRankBy(n) {
-  const rankedLists = document.querySelectorAll('.ranked-list')
-
-  for (let i = 0, l = rankedLists.length; i < l; i++) {
-    let children = rankedLists[i].children
-
-    for (let j = 0, k = children.length; j < k; j++) {
-      children[j].innerHTML = parseInt(children[j].innerHTML) + n
-    }
+  // all li's in rankedList classes
+  let rankedList = document.querySelectorAll('.ranked-list li');
+  for (let i=0; i<rankedList.length; ++i) {
+    rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML,10) + n;
   }
 }
+// function increaseRankBy(n) {
+//   const rankedLists = document.querySelectorAll('.ranked-list')
+// 
+//   for (let i = 0, l = rankedLists.length; i < l; i++) {
+//     let children = rankedLists[i].children
+// 
+//     for (let j = 0, k = children.length; j < k; j++) {
+//       children[j].innerHTML = parseInt(children[j].innerHTML) + n
+//     }
+//   }
+// }
